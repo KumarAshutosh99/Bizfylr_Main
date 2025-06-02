@@ -13,24 +13,28 @@
 <body itemscope="True" itemtype="https://schema.org/WebPage"><meta content="2024-01-01" itemprop="datePublished"/><meta content="2024-01-01" itemprop="dateModified"/><meta content="Bizfylr Solutions Private Limited" itemprop="copyrightHolder"/><meta content="en" itemprop="inLanguage"/><meta content="Bizfylr Solutions Private Limited" itemprop="publisher"/><meta content="Bizfylr Solutions Private Limited" itemprop="author"/><meta content="https://bizfylr.com/Services" itemprop="url"/><meta content="Services Offered by Bizfylr" itemprop="name"/>
 <!-- Top Header -->
 <div>
-<header class="container-fluid p-5 d-inline-flex justify-content-around bg-black">
+<header class="container-fluid p-5 d-flex justify-content-between align-items-center bg-black flex-wrap">
+<!-- Logo -->
 <div>
-<img alt="Bizfylrlogo" src="assets/BIZFYLR.png.webp"/>
+<img alt="Bizfylr logo" class="img-fluid" src="assets/BIZFYLR.png.webp" style="max-height: 60px;"/>
 </div>
-<nav class="navbar navbar-expand-lg navbar-light">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light p-0 position-relative">
 <div class="container-fluid">
-<!-- Toggler Button for Mobile -->
-<button class="navbar-toggler" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
-<span class="navbar-toggler-icon color-light"></span>
+<!-- Toggler Button (Mobile Only) -->
+<button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler d-lg-none" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
 </button>
-<!-- Collapsible Menu -->
-<div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+<!-- Collapsible Nav Links -->
+<div class="collapse navbar-collapse d-lg-flex justify-content-center" id="mainNavbar">
+<!-- Close Button for Mobile Panel -->
+<button aria-label="Close" class="btn-close btn-close-white d-lg-none position-absolute top-0 end-0 m-3" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button"></button>
 <ul class="navbar-nav">
 <li class="nav-item p-2">
-<a class="nav-link text-white" href="#"><strong>Home</strong></a>
+<a class="nav-link text-white" href="Index.html"><strong>Home</strong></a>
 </li>
 <li class="nav-item dropdown p-2">
-<a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+<a aria-expanded="false" class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" href="Services.html" role="button">
 <strong>Service</strong>
 </a>
 <ul class="dropdown-menu">

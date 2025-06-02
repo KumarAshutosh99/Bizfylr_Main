@@ -10,74 +10,83 @@
   <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../style.css">
 </head>
 
 <body>
-  <!-- Top Header -->
-    <div>
-    <header class="container-fluid p-5 d-inline-flex justify-content-around bg-black">
-        <div>
-            <img src="assets/BIZFYLR.png.webp" alt="Bizfylrlogo">
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-            
-              
-              <!-- Toggler Button for Mobile -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-                <span class="navbar-toggler-icon color-light"></span>
-              </button>
-              
-              <!-- Collapsible Menu -->
-              <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-                <ul class="navbar-nav">
-                  
-                  <li class="nav-item p-2">
-                    <a class="nav-link text-white" href="Index.html"><strong>Home</strong></a>
-                  </li>
-          
-                  <li class="nav-item dropdown p-2">
-                    <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                      <strong>Service</strong>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="Business Registration.html">Business Registration</a></li>
-                      <li><a class="dropdown-item" href="Business Compliance.html">Business Compliance</a></li>
-                      <li><a class="dropdown-item" href="Website development.html">Website Development</a></li>
-                      <li><a class="dropdown-item" href="E-commerce Setup.Html">E-commerce Setup</a></li>
-                      <li><a class="dropdown-item" href="E-commerce Managament.html">E-commerce Management</a></li>
-                      <li><a class="dropdown-item" href="E-marketplace Setup.html">E-marketplace Setup</a></li>
-                      <li><a class="dropdown-item" href="E-Marketplace Operation.html">E-marketplace Operation</a></li>
-                      <li><a class="dropdown-item" href="Digital Marketing Service.html">Digital Marketing Service</a></li>
-                      <li><a class="dropdown-item" href="Graphic Design & Video Editing.html">Graphic Design and Videoediting</a></li>
-                    </ul>
-                  </li>
-          
-                  <li class="nav-item p-2">
-                    <a class="nav-link text-white" href="http://127.0.0.1:5500/portfolio.html"><strong>Portfolio</strong></a>
-                  </li>
-          
-                  <li class="nav-item p-2">
-                    <a class="nav-link text-white" href="#"><strong>About Us</strong></a>
-                  </li>
-          
-                  <li class="nav-item p-2">
-                    <a class="nav-link text-white" href="#"><strong>Contact Us</strong></a>
-                  </li>
-          
-                </ul>
-              </div>
-            </div>
-          </nav>
-        <Div>
-            <button class="p-3 text-white bg-success rounded" type="button"><strong>Book a consultation</strong></button>
-        </Div>
-
-    </header>
-
+<!-- Top Header -->
+<div>
+<header class="container-fluid p-5 d-flex justify-content-between align-items-center bg-black flex-wrap">
+<!-- Logo -->
+<div>
+<img alt="Bizfylr logo" class="img-fluid" src="assets/BIZFYLR.png.webp" style="max-height: 60px;"/>
+</div>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light p-0 position-relative">
+<div class="container-fluid">
+<!-- Toggler Button (Mobile Only) -->
+<button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler d-lg-none" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Collapsible Nav Links -->
+<div class="collapse navbar-collapse d-lg-flex justify-content-center" id="mainNavbar">
+<!-- Close Button for Mobile Panel -->
+<button aria-label="Close" class="btn-close btn-close-white d-lg-none position-absolute top-0 end-0 m-3" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button"></button>
+<ul class="navbar-nav">
+<li class="nav-item p-2">
+<a class="nav-link text-white" href="Index.html"><strong>Home</strong></a>
+</li>
+<li class="nav-item dropdown p-2">
+<a aria-expanded="false" class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" href="Services.html" role="button">
+<strong>Service</strong>
+</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="services/buisness-registration/">Business Registration</a></li>
+<li><a class="dropdown-item" href="services/buisness-compliance/">Business Compliance</a></li>
+<li><a class="dropdown-item" href="services/website-development/">Website Development</a></li>
+<li><a class="dropdown-item" href="services/e-commerce-setup/">E-commerce Setup</a></li>
+<li><a class="dropdown-item" href="services/e-commerce-management/">E-commerce Management</a></li>
+<li><a class="dropdown-item" href="services/e-marketplace-setup/">E-marketplace Setup</a></li>
+<li><a class="dropdown-item" href="services/e-marketplace-operation/">E-marketplace Operation</a></li>
+<li><a class="dropdown-item" href="services/digital-marketing-services/">Digital Marketing Service</a></li>
+<li><a class="dropdown-item" href="services/graphic-design-ve/">Graphic Design and Video Editing</a></li>
+</ul>
+</li>
+<li class="nav-item p-2">
+<a class="nav-link text-white" href="Portfolio.html"><strong>Portfolio</strong></a>
+</li>
+<li class="nav-item dropdown p-2">
+<a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="FAQs.html" role="button">
+<strong>About Us</strong>
+</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="About us.html">About Us</a></li>
+<li><a class="dropdown-item" href="FAQs.html">FAQ</a></li>
+</ul>
+</li>
+<li class="nav-item p-2">
+<a class="nav-link text-white" href="contact.html"><strong>Contact Us</strong></a>
+</li>
+<!-- Mobile Book Button -->
+<li class="nav-item d-block d-lg-none text-center mt-3">
+<a class="btn btn-success px-4 py-2" href="https://calendly.com/formllc11/30min" rel="noopener" target="_blank">
+<strong>Book a consultation</strong>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Desktop Book Button -->
+<div class="d-none d-lg-block">
+<a class="btn btn-success p-3 text-white rounded" href="https://calendly.com/formllc11/30min" rel="noopener" target="_blank">
+<strong>Book a consultation</strong>
+</a>
+</div>
+</header>
+</div>
 <!-- Hero Section -->
-  <section class="container rounded-5 p-5 text-center justify-content-center" style="background: url('assets/orig-19_result.webp') center center/cover no-repeat; min-height: 300px;" data-aos="zoom-in">
+  <section class="container rounded-5 p-5 text-center justify-content-center" style="background: url('../../assets/orig-19_result.webp') center center/cover no-repeat; min-height: 300px;" data-aos="zoom-in">
     <div class="container d-flex justify-content-center align-items-center">
       <h1 class="display-4 fw-bold py-5">E-commerce Setup service Shopify, Woocommerce</h1>
     </div>
@@ -90,7 +99,7 @@
     <div class="row">
       
       <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-delay="100">
-        <div class="service-box" style="background-image: url('assets/E-commerce\ Website\ Design\ &\ Dev.webp');background-position: top; height: 500px;">
+        <div class="service-box" style="background-image: url('../../assets/E-commerce\ Website\ Design\ &\ Dev.webp');background-position: top; height: 500px;">
           <div class="overlay">
             <div class="text-box">
               <h4>E-commerce Website Design & Dev</h4>
@@ -101,7 +110,7 @@
       </div>
 
       <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-box" style="background-image: url('assets/Product\ Listing\ &\ Management.webp');background-position: top; height: 500px;">
+        <div class="service-box" style="background-image: url('../../assets/Product\ Listing\ &\ Management.webp');background-position: top; height: 500px;">
           <div class="overlay">
             <div class="text-box">
               <h4>Product Listing & Management</h4>
@@ -112,7 +121,7 @@
       </div>
 
       <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-delay="300">
-        <div class="service-box" style="background-image: url('assets/Payment\ Gateway\ Integration.webp');background-position: top; height: 500px;">
+        <div class="service-box" style="background-image: url('../../assets/Payment\ Gateway\ Integration.webp');background-position: top; height: 500px;">
           <div class="overlay">
             <div class="text-box">
               <h4>Payment Gateway Integration</h4>
@@ -123,7 +132,7 @@
       </div>
 
       <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-delay="400">
-        <div class="service-box" style="background-image: url('assets/Digital\ Marketing\ for\ E-commerce.webp');background-position: top; height: 500px;">
+        <div class="service-box" style="background-image: url('../../assets/Digital\ Marketing\ Agency\ -\ Website.webp');background-position: top; height: 500px;">
           <div class="overlay">
             <div class="text-box">
               <h4>Digital Marketing for E-commerce</h4>
@@ -134,7 +143,7 @@
       </div>
 
       <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-        <div class="service-box" style="background-image: url('assets/E-commerce\ Platform\ Setup\ &\ Migration.webp');background-position: top; height: 500px;">
+        <div class="service-box" style="background-image: url('../../assets/E-commerce\ Platform\ Setup\ &\ Migration.webp');background-position: top; height: 500px;">
           <div class="overlay">
             <div class="text-box">
               <h4>E-commerce Platform Setup & Migration</h4>
@@ -145,7 +154,7 @@
       </div>
 
       <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-delay="600">
-        <div class="service-box" style="background-image: url('assets/Analytics\ &\ Performance\ Optimization.webp');background-position: top; height: 500px;">
+        <div class="service-box" style="background-image: url('../../assets/Analytics\ &\ Performance\ Optimization.webp');background-position: top; height: 500px;">
           <div class="overlay">
             <div class="text-box">
               <h4>Analytics & Performance Optimization</h4>
@@ -212,18 +221,18 @@
       </div>
     </div>
 
-    <!-- Footer bottom -->
-    <hr>
-    <div class="d-flex justify-content-between align-items-center flex-wrap">
-      <p class="mb-0 fw-bold text-dark">Bizfylr © 2024 All Rights Reserved by Bizfylr</p>
-      <div>
-        <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="text-dark"><i class="fab fa-whatsapp"></i></a>
-      </div>
-    </div>
-  </div>
+ <!-- Footer bottom -->
+<hr/>
+<div class="d-flex justify-content-between align-items-center flex-wrap">
+<p class="mb-0 fw-bold text-dark">Bizfylr © 2024 All Rights Reserved by Bizfylr</p>
+<div>
+<a class="text-dark me-3" href="https://www.facebook.com/people/Bizfylr/61572299797680/"><i class="fab fa-facebook-f"></i></a>
+<a class="text-dark me-3" href="#"><i class="fab fa-twitter"></i></a>
+<a class="text-dark me-3" href="https://www.instagram.com/bizfylr/profilecard/?igsh=MTJ1OGVnbjVoYTQwbA%3D%3D"><i class="fab fa-instagram"></i></a>
+<a class="text-dark" href="https://api.whatsapp.com/send/?phone=916202619173"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+</div>
 </footer>
 
   <!-- AOS JS -->

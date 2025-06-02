@@ -230,7 +230,7 @@ section .d-flex > div {
 /* Service Box */
 .service-box {
     background: url('assets/orig-19_result.webp') center center/cover no-repeat;
-    height: 830px;
+    height: 500px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -244,7 +244,7 @@ section .d-flex > div {
 }
 .overlay {
     display: flex;
-    justify-content: center;
+    justify-content: top center;
     align-items: flex-end;
     width: 100%;
     height: 100%;

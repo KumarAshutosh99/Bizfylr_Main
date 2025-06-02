@@ -373,8 +373,8 @@ section .d-flex > div {
     background-image: url(assets/background.webp);
     background-size: cover;
     background-position: center;
-    width: 75%;
-    height: 650px; 
+    width: 100%;
+    height: auto; min-height: 400px; 
     filter: brightness(70%);
 }
 .bg-banner:hover{
